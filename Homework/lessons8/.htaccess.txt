@@ -1,0 +1,4 @@
+<IfModule mob_rewrite.C>
+Redirect 301 /conTacT /contacts
+Redirect 301 /Articlee.html /blog
+</IfModule>

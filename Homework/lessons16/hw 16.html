@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>HW16</title>
+    </head>
+    <style>
+        .text_shadow h2{
+            font-size: 20px;
+            font-family: 'Times New Roman';
+            font-style:normal;
+            font-weight: lighter;
+        }
+        .text{
+            text-shadow: 15px 15px 0px grey;
+        }
+        .text2{
+            text-shadow: 15px 15px 2px grey;
+        }
+        .text3{
+            text-shadow: -5px -5px 2px blue, 7px 7px 2px red;
+        }
+
+        .text4{
+            text-shadow: 0px 1px 1px rgb(226, 208, 169);
+            color:  rgb(226, 208, 169);
+        }
+        .text5{
+            text-shadow: 1px 1px 2px rgb(226, 208, 169);
+            color: rgb(226, 208, 169);
+        }
+        .text6{
+            text-shadow: black  0px 0px 1px;
+            color:  rgb(226, 208, 169);
+        }
+        .box1{
+            margin-bottom: 30px;
+            width: 100px;
+            height: 100px;
+            background:white;
+            border: black solid 1px;
+            box-shadow: 10px 10px gray;
+        }
+        p{
+            font-size: 8px;
+            left: 10px;
+            margin-top: 0;
+        }
+        .box2{
+            margin-bottom: 30px;
+            width: 100px;
+            height: 100px;
+            background:white;
+            border: black solid 1px;
+            box-shadow: 10px 10px 4px gray;
+        }
+        
+        .box3{
+            margin-bottom: 30px;
+            width: 100px;
+            height: 100px;
+            background:white;
+            border: black solid 1px;
+            box-shadow:inset 3px 3px 4px blue, inset -3px -3px 4px red;
+        }
+        .grad1_leneynuy{
+            margin-bottom: 30px;
+            width: 200px;
+            height: 100px;
+            background-image: linear-gradient(to right, red, indigo, blue, white, red);
+            border: black solid 1px;
+        }
+        .grad2_leneynuy{
+            margin-bottom: 30px;
+            width: 200px;
+            height: 100px;
+            background: linear-gradient(red 50%, white 50%);
+            background-size: 100% 67px;
+            border: black solid 1px;
+        }
+        .radual{
+            margin-bottom: 30px;
+            width: 200px;
+            height: 100px;
+            background: radial-gradient( circle, rgb(157, 203, 221) 6%, rgb(38, 157, 212) 42%);
+            border: black solid 1px;
+        }
+        .radual2{
+            margin-bottom: 30px;
+            width: 200px;
+            height: 100px;
+            background: radial-gradient( circle closest-side at 10% 16%, rgb(170, 208, 223) 56%, rgb(38, 157, 212) 174%);
+            border: black solid 1px;
+        }
+        .radual3{
+            margin-bottom: 30px;
+            width: 200px;
+            height: 100px;
+            background: radial-gradient( circle, black 3%, white 18%, green 37%);
+            margin-bottom: 20px;
+            border: black solid 1px;
+        }
+    </style>
+    <body>
+    <div class="text_shadow">
+        <h2 class="text">Текст с тенью.</h2>
+        <h2 class="text2">Текст с тенью + размытие.</h2>
+        <h2 class="text3">Текст с двумя тенями.</h2>
+        <h2 class="text4">Вдавленный текст.</h2>
+        <h2 class="text5">Обьемный текст.</h2>
+        <h2 class="text6">Контур.</h2>
+    </div>
+    <div class="box1">
+        <p>Блок с тенью.</p>
+    </div>
+        <div class="box2">
+        <p>Блок с тенью + размытие.</p>
+    </div>
+    <div class="box3">
+        <p>Две внутренние тени.</p>
+    </div>
+    <div class="grad1_leneynuy">
+    </div>
+    <div class="grad2_leneynuy">
+    </div>
+    <div class="radual"></div>
+    <div class="radual2"></div>
+    <div class="radual3"></div>
+    </body>
+</html>

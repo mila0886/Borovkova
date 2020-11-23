@@ -1,0 +1,25 @@
+@charset "UTF-8"
+    *{
+    padding: 0;
+    margin: 0;
+}
+    h1{
+        font-size: 35px;
+        font-family: 'robotoitalic';
+        text-align: center;
+        padding-bottom: 20px;
+    }    
+    .paragraf{
+        font-size: 20px;
+        font-style: italic;
+    }
+    .fon{
+        background-image: url(../img/fon.jpg);
+        background-size: cover;
+        width: 100%;
+        padding: 40px 0;
+    }
+    .list{
+        list-style-image: url(../img/gal++.png);
+        list-style-position: inside;
+    }

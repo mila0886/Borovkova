@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HM19 part 1</title>
+</head>
+<style>
+    *{padding: 0;
+    margin: 0;}
+body,
+html{
+    height: 100%;
+}
+.for_page{
+    position: relative;
+    min-height: 100%;
+}
+.page{
+    padding-bottom: 60px;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.fl{
+float: left;
+}
+.fr{
+    float: right;
+ }
+.clear{
+clear: both;
+}
+
+.clock_work,
+.adress_main,
+.phone_main{
+    width: 27%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+
+.phone_main a{
+color: rgb(34, 32, 160);
+text-decoration: none;
+}
+.phone_main a:hover{
+color: #3d7045;
+}
+.adress_main{
+color: #333;
+ }
+ .header{
+    background: #f1f1f1;
+}
+.wrapper_header{
+    height: 0;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(54, 54, 114);
+    padding: 50px 0;
+}
+.menu{
+    background:rgb(54, 54, 114);
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    padding: 15px 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration:none;
+    display: block;
+}
+.sidebar{
+    background:#81a0ac;
+    height: 700px;
+    width: 500px;
+    display: flex;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li{
+    list-style: none;
+}
+.sidebar ul li a{
+    padding: 15px 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration:none;
+    display: block;
+}
+.content{
+    width: 870px;
+    background: rgb(20, 177, 189);
+}
+.wrapper_content{
+    display: flex;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid;  
+}
+</style>
+<body>
+<main class="for_page">
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="head_menu">
+                <div class="clock_work fl">
+                    <span> 9:00 до 18:00</span>
+                </div>
+                <div class="phone_main fl">
+                    <a href="tel:+381234567890">+38 (123) 346-78-90</a> 
+                </div>
+                <div class="adress_main fl">
+                    г. Киев, ул. Тимошенко,15
+                </div>
+                <div class="clear"></div>
+                <div class="wrapper_header"></div>
+            </div>
+        </div>
+                <nav class="menu">
+                    <div class="container">
+                        <ul class="nav-menu">
+                            <li><a href="">О магазине</a></li>
+                            <li><a href="">Доставка и оплата</a></li>
+                            <li><a href="">Акции</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+        <section class="main_page">
+            <div class="container">
+                <div class="wrapper_content">
+                    <aside class="sidebar">
+                        <ul>
+                            <li><a href="">Обувь</a></li>
+                            <li><a href="">Игрушки</a></li>
+                            <li><a href="">Одежда</a></li>
+                            <li><a href="">Транспорт</a></li>
+                        </ul>
+                    </aside>
+                    <div class="content">
+                        <h2>Детская обувь Skechers</h2>
+                        <img src="img/MAIN.jpg" alt="">
+                        <article>
+                            <h3>Про  бренд Skechers</h3>
+                            Skechers – американський бренд, що представляє стильне спортивне взуття, а також одяг та аксесуари. Skechers був заснований у 1992 році, а зараз представлений 
+                            у більш ніж 100 країнах світу. В основі колекцій бренду — якість, стиль та інноваційні технології. Найпопулярнішою лінійкою є Skechers Sport. Бренд відомий своєю 
+                            технологією Memory Foam, цей матеріал запам’ятовує форму стопи та забезпечує винятковий комфорт. Продукція Skechers користується популярністю серед молоді, що прагне 
+                            виглядати яскраво та стильно. Крім того, бренд приділяє особливу увагу дитячим колекціям: незвичний дизайн взуття Skechers дуже подобається дітям.
+                        </article>
+                        <article>
+                            <h3>Рекомендации по уходу</h3>
+                            Текстильний верх - м'який матеріал, має прекрасні характеристики циркуляції повітря. Завдяки тканій структурі практично не утворюються заломи, догляд за взуттям надзвичайно простий.
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+       <div class="container">copyrigth2020</div> 
+    </footer>
+</main>
+</body>
+</html>

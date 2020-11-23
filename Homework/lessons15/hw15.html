@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Каталог</title>
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body,html{
+            height: 100%;
+        }
+        
+        .for_page{
+            position:relative;
+            min-height: 100%;
+        }
+        .page{
+            padding-bottom: 100px;
+        }
+        footer{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background: #7b6dbd;
+            height: 100px;
+        }
+        header{
+            height: 100px;
+            background: #7b6dbd;
+        }
+        .container{
+            width: 1170px;
+            margin: 0 auto;
+        }
+        .content{
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+        .item-blog{
+            width: 360px;
+            float: left;
+            box-sizing: border-box;
+            margin-right: 30px;
+            margin-bottom: 80px;
+        }
+        .clear{
+	        clear:both;
+	    }
+        img{
+            min-width: 100%;
+            width: auto;
+            max-height: 100%;
+            
+        }
+        h2{
+            min-height: 50px;
+        }
+        .item-blog:nth-child(4){
+            clear: both;
+        }
+        .image-blog{
+            max-height: 225px;
+            overflow: hidden;
+            margin-bottom: 20px;
+          
+        }
+        
+        .image-blog img{
+            margin: 0 auto;
+            display: block;
+            height: 223px;
+            transition: all ease-out;
+        }
+        .image-blog img:hover{
+            transform: scale(1.1);
+        }
+        .item-blog a{
+            font-size: 16px;
+            line-height: 19px;
+            display: block;
+            text-decoration: none;
+            color: #333;
+           
+        }
+        .item-blog a:hover{
+            transition: ease 0.3s;
+        }
+        .expetr_description{
+            max-height: 64px;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .item-blog .btn_blog{
+            width: 151px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            background: rgb(31, 145, 197);
+            color: #333333;
+            padding: 10px;
+            text-align: center;
+        }
+        .item-blog .btn_blog:hover{
+            bottom: #333;
+            transition: linear;
+        }
+        .image-blog .price, del{
+            color: red;
+        }
+    </style>
+    <body>
+        <main class="for_page">
+            <div class="page">
+                <header></header>
+                <section class="content">
+                    <div class="container">
+                        <div class="item-blog">
+
+                            <div class="image-blog"> <img src="..//lessons 15/img/1.jpg" alt=""></div>
+                                <h2><a href="#">Набор десертных тарелок Natalie Луковый 19см</a></h2>
+                                <p>Цена <b>908 грн.</b> / <del class="price">1260 грн.</del></p>
+                                <div class="expetr_description">
+                                    Самым известным в мире чешским фарфором, прежде всего, является фарфор с «луковым» декором.
+                                    Фарфор с «луковым» декором, называемый «цибулак», в чешских землях производится с 1885 г. Он стал символом хрупкой красоты, символом соединения практичности и радости духа, 
+                                    символом уникальности и всемирности. Его название связано с используемым декором, представляющим собой стилизованные растительные мотивы на фоне восточноазиатской философии, 
+                                    но приспособленные к европейскому стилю и восприятию. Принятое название «луковый» узор произошло из ошибочной интерпретации одного из мотивов декора – изображения плода граната, 
+                                    который по своей форме отдаленно напоминает луковицу.
+                                </div>
+                                <a class="btn_blog" href="#">Подробнее</a>
+                            </div>
+
+                            <div class="item-blog">
+                            <div class="image-blog"> <img src="..//lessons 15/img/2.png" alt=""></div>
+                                <h2><a href="#">Тарелка салатная Herbs Chamomile 22,5см</a></h2>
+                                <p>Цена <b>200 грн.</b> / <del class="price">266 грн.</del></p>
+                                <div class="expetr_description">
+                                    Тарелка салатная от компании DPL изготовлена из фарфора. Обладает неординарным рисунком ветки цветущей ромашки и листовым орнаментом. Данная емкость дополнит сервировку
+                                    стола и в ней можно подавать различные закуски или порционные блюда.
+                                    Характеристика: диаметр 22,5 см.
+                                </div>
+                                <a class="btn_blog" href="#">Подробнее</a>
+                            </div>
+
+                            <div class="item-blog">
+                                <div class="image-blog"> <img src="..//lessons 15/img/3.png" alt=""></div>
+                                    <h2><a href="#">Тарелка салатная Herbs Oregano 20м</a></h2>
+                                    <p>Цена <b>200 грн.</b> / <del class="price">266 грн.</del></p>
+                                    <div class="expetr_description">
+                                        Тарелка салатная от компании DPL изготовлена из фарфора. Обладает неординарным рисунком ветки цветущего орегано и листовым орнаментом. Данная емкость дополнит сервировку 
+                                        стола и в ней можно подавать различные закуски или порционные блюда. 
+                                        Характеристика: диаметр 20 см.
+                                    </div>
+                                    <a class="btn_blog" href="#">Подробнее</a>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="item-blog">
+                                    <div class="image-blog"> <img src="..//lessons 15/img/4.jpg" alt=""></div>
+                                        <h2><a href="#">Набор глубоких тарелок Saphyr Гуси 20см</a></h2>
+                                        <p>Цена <b>882 грн.</b> / <del class="price">1020 грн.</del></p>
+                                        <div class="expetr_description">Рисунок на посуде может немного отличаться. Гуси могут быть нарисованы в нескольких вариантах (см. на рисунке). Пожалуйста, 
+                                            если отличия для Вас принципиальны, указывайте это при заказе.
+                                        </div>
+                                        <a class="btn_blog" href="#">Подробнее</a>
+                                    </div>
+                                    
+                                    <div class="item-blog">
+                                    <div class="image-blog"> <img src="..//lessons 15/img/5.jpg" alt=""></div>
+                                        <h2><a href="#">Тарелка десертная Европейская Замоскворечье 18см</a></h2>
+                                        <p>Цена <b>76 грн.</b> / <del class="price">126грн.</del></p>
+                                        <div class="expetr_description">
+                                            Десертная тарелка - это необходимый предмет посуды на каждой кухне. Но посуда от Императорского фарфорового завода является далеко не повседневной. 
+                                            Изготовленная из высококачественного фарфора с элементами ручной росписи такая посуда всемирно известна своим превосходным качеством. Лучшие мастера занимаются 
+                                            разработкой форм и рисунков для тарелок, которые украсят любой праздничный стол.
+
+                                            Форма Гербовая была создана на Императорском фарфоровом заводе в середине ХIХ века и позже была восстановлена по музейному образцу с названием Европейская.
+                                            Отличительною особенностью данного сервиза является рисунок на десертных тарелках. Автор формы Яковлева С.Е., автор рисунка Шуляк Г.Д.
+
+                                            Характеристика: диаметр 18 см
+                                        </div>
+                                        <a class="btn_blog" href="#">Подробнее</a>
+                                    </div>
+
+                                    <div class="item-blog">
+                                        <div class="image-blog"> <img src="..//lessons 15/img/6.jpg" alt=""></div>
+                                            <h2><a href="#">Тарелка пирожковая Тюльпан Кобальтовая сетка 15см</a></h2>
+                                            <p>Цена <b>903 грн.</b> / <del class="price">1606 грн.</del></p>
+                                            <div class="expetr_description">
+                                                Десертная тарелка - это необходимый предмет посуды на каждой кухни. Но посуда от Императорского фарфорового завода является далеко не повседневной. Изготовленная из 
+                                                высококачественного фарфора с элементами ручной росписи такая посуда всемирно известна своим превосходным качеством. Лучшие мастера занимаются разработкой форм и 
+                                                рисунков для тарелок, которые украсят любой праздничный стол. Автор формы тюльпан - Яковлева С.Е.
+                                                Самый знаменитый и узнаваемый декор "Кобальтовая сетка". Такой вид росписи впервые украсил фарфор в далеком 1945 году, став с тех пор общепризнанной классикой в 
+                                                искусстве декора, а также главным фирменным знаком, принадлежащим Императорскому Фарфоровому Заводу (в то время Ломоносовскому фарфоровому заводу). Мастером этого завода Анной Яцкевич была создана такая "кобальтовая сеточка". Изначально узор был золотым. В кобальтовом 
+                                                варианте узор сервизы из фарфора получили уже после войны. Кобальтовая сеточка гармонично ложится на белоснежную поверхность фарфора, где в местах пересечения синих линий вспыхивают яркие звездочки 22-х кратного 
+                                                золота, создавая в итоге удивительно благородную, классчески изящную вещь.
+                                                Характеристика: диаметр 15 см, высота 2,2 см
+                                            </div>
+                                            <a class="btn_blog" href="#">Подробнее</a>
+                                    </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                </section>
+
+            </div>
+            <footer>copyright2020</footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/shemas/sitemap/0.9">
+</urlset>
+
+    <url>
+        <loc>http://site.com.ua/Glavnaya</loc>
+        <lastmod>2020-10-13</lastmod>
+        <changefreq>monthly</changefreq> 
+        <priority>1.0</priority>
+    </url>
+    
+    <url>
+        <loc>http://site.com.ua/O Companii</loc>
+        <lastmod>2020-10-13</lastmod>
+        <changefreq>monthly</changefreq> 
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>http://site.com.ua/Contacty</loc>
+        <lastmod>2020-10-13</lastmod>
+        <changefreq>monthly</changefreq> 
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>http://site.com.ua/Uslugi</loc>
+        <lastmod>2020-10-13</lastmod>
+        <changefreq>monthly</changefreq> 
+        <priority>0.9</priority>
+    </url>
+
+     <url>
+        <loc>http://site.com.ua/Blog</loc>
+        <lastmod>2020-10-13</lastmod>
+        <changefreq>monthly</changefreq> 
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>http://site.com.ua/blog/Akcii na nashem bloge</loc>
+        <lastmod>2020-10-13</lastmod>
+        <changefreq>monthly</changefreq> 
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>http://site.com.ua/blog/Akcii na nashem bloge2</loc>
+        <lastmod>2020-10-13</lastmod>
+        <changefreq>monthly</changefreq> 
+        <priority>0.6</priority>
+    </url>
+</urlset>
