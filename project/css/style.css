@@ -106,21 +106,21 @@ display: none;
 #slider-baner .owl-nav .owl-prev{
     background: url(../img/arrow_prev.png) no-repeat;
     width: 8px;
-    height: 13px;
+    height: 340px;
     outline: none;
     position: absolute;
     bottom: 300px;
-    left: 16px;
+    left: -160px;
     z-index: 1;
 }
 #slider-baner .owl-nav .owl-next{
     background: url(../img/arrow_next.png) no-repeat;
     width: 8px;
-    height: 13px;
+    height: 340px;
     outline: none;
     position: absolute;
     bottom: 300px;
-    right: 16px;
+    right:-160px;
     z-index: 1;
 }
 /* baner home*/
