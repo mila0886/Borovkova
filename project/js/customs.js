@@ -4,11 +4,11 @@ jQuery(document).ready(function () {
 
     'use strict';
 
-	var slid = jQuery('#home_slider');
+	var slid = jQuery('#slider-baner');
 		
 	slid.owlCarousel({
 		items: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 6000,
 		autoplayHoverPause: false,
 		smartSpeed: 1000,

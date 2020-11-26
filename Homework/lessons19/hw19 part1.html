@@ -83,7 +83,7 @@ color: #333;
 }
 .sidebar{
     background:#81a0ac;
-    height: 700px;
+    height: 1130px;
     width: 500px;
     display: flex;
 }
@@ -108,13 +108,32 @@ color: #333;
     display: flex;
 }
 h2{
+    top: 25px;
+    bottom: 25px;
     font-size: 25px;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-img{
-    width: 300px;
-    height: 300px;
-    border: 1px solid;  
+.img-article img{
+    max-width: 100%;
+    height: 350px;
+}
+.btn{
+    display: block;
+    width: 150px;
+    background: rgb(77, 77, 160);
+    color: aliceblue;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    text-decoration: none; 
+}
+.img-article h3{
+    top: 10px;
+    bottom: 10px;
 }
 </style>
 <body>
@@ -159,19 +178,28 @@ img{
                         </ul>
                     </aside>
                     <div class="content">
-                        <h2>Детская обувь Skechers</h2>
-                        <img src="img/MAIN.jpg" alt="">
-                        <article>
-                            <h3>Про  бренд Skechers</h3>
-                            Skechers – американський бренд, що представляє стильне спортивне взуття, а також одяг та аксесуари. Skechers був заснований у 1992 році, а зараз представлений 
+                    
+                        <header>
+                            <h2>Детская обувь Skechers</h2>
+                        </header>
+                    </article>
+                    <article>         
+                       <div class="img-article"><a href="#"><img src="img/skecher.jpg" alt=""></a></div>
+                       <h3> <a href="#">Про  бренд Skechers</h3></a>
+                           <div> Skechers – американський бренд, що представляє стильне спортивне взуття, а також одяг та аксесуари. Skechers був заснований у 1992 році, а зараз представлений 
                             у більш ніж 100 країнах світу. В основі колекцій бренду — якість, стиль та інноваційні технології. Найпопулярнішою лінійкою є Skechers Sport. Бренд відомий своєю 
                             технологією Memory Foam, цей матеріал запам’ятовує форму стопи та забезпечує винятковий комфорт. Продукція Skechers користується популярністю серед молоді, що прагне 
-                            виглядати яскраво та стильно. Крім того, бренд приділяє особливу увагу дитячим колекціям: незвичний дизайн взуття Skechers дуже подобається дітям.
+                            виглядати яскраво та стильно. Крім того, бренд приділяє особливу увагу дитячим колекціям: незвичний дизайн взуття Skechers дуже подобається дітям.</div>
+                        <a class="btn" href="#">Подробнее</a>
                         </article>
-                        <article>
-                            <h3>Рекомендации по уходу</h3>
-                            Текстильний верх - м'який матеріал, має прекрасні характеристики циркуляції повітря. Завдяки тканій структурі практично не утворюються заломи, догляд за взуттям надзвичайно простий.
+
                         </article>
+                        <article>         
+                            <div class="img-article"><a href="#"><img src="img/vybor-obuvi.jpg" alt=""></a></div>
+                            <h3> <a href="#">Рекомендации по уходу</h3></a>
+                                <div> Текстильний верх - м'який матеріал, має прекрасні характеристики циркуляції повітря. Завдяки тканій структурі практично не утворюються заломи, догляд за взуттям надзвичайно простий.</div>
+                             <a class="btn" href="#">Подробнее</a>
+                             </article>
                     </div>
                 </div>
             </div>
