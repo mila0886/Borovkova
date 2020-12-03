@@ -1,99 +1,512 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Bagdum</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/style.css" rel="stylesheet"/>
-<link href="css/responsive.css" rel="stylesheet"/>
-<link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="bootstrap-4.0.0/dist/css/bootstrap-grid.min.css" rel="stylesheet"/>
-<link href="fonts/fonts/stylesheet.css" rel="stylesheet"/>
-<link href="fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
-<link href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" type="text/css" rel="stylesheet">
-<link href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/responsive.css" rel="stylesheet" />
+<link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="bootstrap-4.0.0/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+<link href="fonts/fonts/stylesheet.css" rel="stylesheet" />
+<link href="fontawesome/css/all.min.css"  type="text/css" rel="stylesheet">
+<link href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"  type="text/css" rel="stylesheet">
+<link href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"  type="text/css" rel="stylesheet">
+
 
 <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
 <script type="text/javascript" src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/customs.js"></script>
 <script type="text/javascript" src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <main class="for_page">
-        <div class="page">
-            <!--header-->
-            <header class="header">
-                <div class="container border-header">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
-                            <a href="/" class="logo"><img src="img/logo.png" alt="logo" title="logo"></a>
-                        </div>
-                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
-                            <nav class="nav-menu">
-                                <nav class="navbar-expand-md">
-                                    <a class="navbar-brand" href="#">Navbar</a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                        <i class="fas fa-bars"></i>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                      <ul class="navbar-nav">
-                                        <li class="item active">
-                                          <a class="nav-link" href="#">Home</a>
-                                        </li>
-                                        <li class="item">
-                                          <a class="nav-link" href="#">Servise</a>
-                                        </li>
-                                        <li class="item">
-                                          <a class="nav-link" href="#">Portfolio</a>
-                                        </li>
-                                        <li class="item">
-                                            <a class="nav-link" href="#">About</a>
-                                        </li>
-                                        <li class="item">
-                                            <a class="nav-link" href="#">Pricing</a>
-                                        </li>
-                                        <li class="item">
-                                            <a class="nav-link" href="#">Contact</a>
-                                        </li>
-                                      </ul>
-                                    </div>
+  <main class="for_page">
+      <div class="page">
+                <!--header-->
+                    <header class="header">
+                       <div class="container border-header"> 
+                           <div class="row">
+                             <div class=" col-xl-2 col-lg-3 col-md-12 col-sm-12">
+                                <a href="/" class="logo"><img src="img/logo.png" alt="logo" title="logo" /></a>
+                             </div>
+                             <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
+                                  <nav class="nav-menu">
+                                            <nav class="navbar-expand-md">
+                                              <div class="responsive_menu">
+                                                 <a class="navbar-brand" href="#">Navbar</a>
+                                                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                                    <i class="fas fa-bars"></i>
+                                                  </button>
+                                                </div>
+                                                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                                    <ul class="navbar-nav">
+                                                      <li class="item active">
+                                                        <a class="nav-link" href="#">Home</a>
+                                                      </li>
+                                                      <li class="item">
+                                                        <a class="nav-link" href="#">Servise</a>
+                                                      </li>
+                                                      <li class="item">
+                                                        <a class="nav-link" href="#">Portfolio</a>
+                                                      </li>
+                                                       <li class="item">
+                                                        <a class="nav-link" href="#">About</a>
+                                                      </li>
+                                                       <li class="item">
+                                                        <a class="nav-link" href="#">Pricing</a>
+                                                      </li>
+                                                       <li class="item">
+                                                        <a class="nav-link" href="#">Contact</a>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+												</nav>
                                   </nav>
-                            </nav>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
-                            <form class="form-search">
-                                <input class="pole-search" type="search" name="search" placeholder="Поиск по сайту"/>
-                                <input class="btn-search" type="submit" value="Поиск".>
-                            </form>
-                        </div>
-                        
-                    </div>
-                </div>
-            </header>
-             <!--header-->
-
-
-             <section class="banner-home">
-                 <div class="container">
-                     <div class="row">
-                         <div class="owl-carousel" id="slider-baner">
-                                <div class="item">
-                                 <h2>We Are</h2>
-                                 <div class="text-slider">Creative</div>
-                                </div>
-                                <div class="item">
-                                <h2>We Are2</h2>
-                                <div class="text-slider">Creative2</div>
-                                </div>
-                                <div class="item">
-                                <h2>We Are3</h2>
-                                <div class="text-slider">Creative3</div>
-                                </div>
+                             </div>
+                             <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                             		<form class="form-search">
+                                       <input class="pole-search" type="search" name="search" placeholder="Поиск по сайту" />
+                                       <input class="btn-search" type="submit" value="Поиск" />
+                                    </form>
+                             </div>
+                           </div>
+                       </div>
+                    </header>
+                <!--header-->
+                
+                
+                <section class="banner-home">
+                      <div class="container">
+                         <div class="row">
+                           	  <div class="owl-carousel" id="slider-baner">
+                                  <div class="item">
+                                    <h2>We Are</h2>
+                                    <div class="text-slider">Creative</div>
+                                  </div>
+                                  <div class="item">
+                                    <h2>We Are2</h2>
+                                    <div class="text-slider">Creative3</div>
+                                  </div>
+                                  <div class="item">
+                                    <h2>We Are3</h2>
+                                    <div class="text-slider">Creative3</div>
+                                  </div>
+                              </div>
                          </div>
-                     </div>
-                 </div>
+                      </div>
+                </section>
+                
+                <section class="block2" id="block2">
+                     <div class="container">
+                           <div class="row"> 
+                           				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                           <h1>With More Than 10 Years Of Knowledge And Expertise We Design And Code Websites And Apps, We <a href="#">Build Brands</a> And Help Them Succeed.</h1>
+                                        </div>
+                           </div>
+                           
+                           <div class="row">
+                           			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                        <div class="box2_block">
+                                          <div class="icon_box2"><i class="fas fa-cogs"></i></div>
+                                          <div class="content_box2">
+                                             <div class="title_box2">User Interface</div>
+                                             <div class="text_box2">Phasellus sit amet tristique ligula. Donec iaculis leo suscipit ultricies.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                        <div class="box2_block">
+                                          <div class="icon_box2"><i class="far fa-grin"></i></div>
+                                          <div class="content_box2">
+                                             <div class="title_box2">User Experience</div>
+                                             <div class="text_box2">Phasellus sit amet tristique ligula. Donec iaculis leo suscipit ultricies.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                        <div class="box2_block">
+                                          <div class="icon_box2"><i class="fas fa-tag"></i></div>
+                                          <div class="content_box2">
+                                             <div class="title_box2">Modern Design</div>
+                                             <div class="text_box2">Phasellus sit amet tristique ligula. Donec iaculis leo suscipit ultricies.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                        <div class="box2_block">
+                                          <div class="icon_box2"><i class="far fa-life-ring"></i></div>
+                                          <div class="content_box2">
+                                             <div class="title_box2">Awesome Featured</div>
+                                             <div class="text_box2">Phasellus sit amet tristique ligula.Donec iaculis leo suscipit ultricies.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                        <div class="box2_block">
+                                          <div class="icon_box2"><i class="fas fa-cloud-download-alt"></i></div>
+                                          <div class="content_box2">
+                                             <div class="title_box2">Blog Collection</div>
+                                             <div class="text_box2">Phasellus sit amet tristique ligula. Donec iaculis leo suscipit ultricies.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                        <div class="box2_block">
+                                          <div class="icon_box2"><i class="far fa-comment"></i></div>
+                                          <div class="content_box2">
+                                             <div class="title_box2">24/7 Support</div>
+                                             <div class="text_box2">Phasellus sit amet tristique ligula. Donec iaculis leo suscipit ultricies.</div>
+                                          </div>
+                                        </div>
+                                    </div>
+                           </div>
+                      </div>
+                </section>
+
+                <section class="block3" id="block3">
+                    <div class="container">
+                       <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                              <div class="box3_block3">
+                                <div class="icon_box3"><img src="img/bag.png" alt=""></div>
+                                <div class="content_box3">
+                                  <div class="title_box3">345</div>
+                                  <div class="text_box3">COMPLETED PROJECTS</div>
+                                </div>
+                              </div>
+                             </div> 
+
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                <div class="box3_block3">
+                                  <div class="icon_box3"><img src="img/coffee.png" alt=""></div>
+                                  <div class="content_box3">
+                                    <div class="title_box3">983</div>
+                                    <div class="text_box3">DRINKED COFFEE</div>
+                                  </div>
+                                </div>
+                               </div> 
+
+                              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                  <div class="box3_block3">
+                                    <div class="icon_box3"><img src="img/pensil.png" alt=""></div>
+                                    <div class="content_box3">
+                                      <div class="title_box3">478</div>
+                                      <div class="text_box3">MAILS SENT</div>
+                                    </div>
+                                  </div>
+                                 </div> 
+
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                  <div class="box3_block3">
+                                    <div class="icon_box3"><img src="img/heart.png" alt=""></div>
+                                    <div class="content_box3">
+                                      <div class="title_box3">48</div>
+                                      <div class="text_box3">AWARDS TAKEN</div>
+                                    </div>
+                              </div>
+                             </div> 
+                          <div>
+                    </div>
+                 </section>
+
+                <section class="block4">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                              <h2>Creative Portfolio</h2>
+                              <div class="text_block3">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</div>
+                          </div>
+                         </div>
+                       <div class="row">
+                       			<ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="Photography-tab" data-toggle="tab" href="#Photography" role="tab" aria-controls="Photography" aria-selected="false">Photography</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="Apps-tab" data-toggle="tab" href="#Apps" role="tab" aria-controls="Apps" aria-selected="false">Apps</a>
+                              </li>
+                            </ul>
+                            
+                       </div>
+                    
+                    <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                  <div class="galery_home">
+                                       <div class="img_galery1">
+                                           <div class="img_galery img_galery_box1">
+                                           <img src="img/img1.jpg" alt="img1" />
+                                            <div class="hover_galery">
+                                                  <div class="title_galery">Super Awesome Work1</div>
+                                                  <div class="text_galery">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque necestas.</div>
+                                                  <a href="#" class="btn_galery">View More</a>
+                                               </div>
+                                           </div>
+                                        </div>
+                                     <div class="galery_wrapper">
+                                       <div class="img_galery2">
+                                               <div class="img_galery">
+                                               <img src="img/img2.jpg" alt="img1" />
+                                               <div class="hover_galery">
+                                                  <div class="title_galery">Super Awesome Work2</div>
+                                                  <div class="text_galery">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque necestas.</div>
+                                                  <a href="#" class="btn_galery">View More</a>
+                                               </div>
+                                               </div>
+                                               <div class="img_galery">
+                                               <img src="img/img3.jpg" alt="img1" />
+                                                <div class="hover_galery">
+                                                  <div class="title_galery">Super Awesome Work3</div>
+                                                  <div class="text_galery">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque necestas.</div>
+                                                  <a href="#" class="btn_galery">View More</a>
+                                               </div>
+                                               </div>
+                                       </div>
+                                       <div class="img_galery3">
+                                               <div class="img_galery">
+                                               <img src="img/img4.jpg" alt="img1" />
+                                                <div class="hover_galery">
+                                                  <div class="title_galery">Super Awesome Work4</div>
+                                                  <div class="text_galery">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque necestas.</div>
+                                                  <a href="#" class="btn_galery">View More</a>
+                                               </div>
+                                               </div>
+                                               <div class="img_galery">
+                                               <img src="img/img5.jpg" alt="img1" />
+                                                <div class="hover_galery">
+                                                  <div class="title_galery">Super Awesome Work5</div>
+                                                  <div class="text_galery">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque necestas.</div>
+                                                  <a href="#" class="btn_galery">View More</a>
+                                               </div>
+                                               </div>
+                                               <div class="img_galery">
+                                               <img src="img/img6.jpg" alt="img1" />
+                                                <div class="hover_galery">
+                                                  <div class="title_galery">Super Awesome Work6</div>
+                                                  <div class="text_galery">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque necestas.</div>
+                                                  <a href="#" class="btn_galery">View More</a>
+                                               </div>
+                                               </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                              
+                              </div>
+                              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">.2</div>
+                              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">.3</div>
+                            </div>
+                          </div>
+                </section>
+
+                <section class="block5" id="block5">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h2>Creative Servise</h2>
+                            <div class="text_block5">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</div>
+                          </div>
+                       </div>
+                     <div class="row">
+                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                     <div class="box1 block5_box">
+                                       <div class="content_box5">
+                                          <div class="title_box5">Custom Menus</div>
+                                          <div class="text_box5">Class aptent taciti estied aliquam ellus pers piciat unde omnis dolorem dantium.</div>
+                                          <a href="#" class="btn_block5">See Project</a>
+                                        </div>
+                                     </div>
+                                 </div>
+                                 
+                                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                 <div class="box2 block5_box">
+                                  <div class="content_box5">
+                                     <div class="title_box5">User Interface</div>
+                                     <div class="text_box5">Class aptent taciti estied aliquam ellus pers piciat unde omnis dolorem dantium.</div>
+                                     <a href="#" class="btn_block5">See Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                                 
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box3 block5_box">
+                              <div class="content_box5">
+                                 <div class="title_box5">Animated Counters</div>
+                                 <div class="text_box5">Class aptent taciti estied aliquam ellus pers piciat unde omnis dolorem dantium.</div>
+                                 <a href="#" class="btn_block5">See Project</a>
+                                </div>
+                            </div>
+                        </div>
+                                 
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="box4 block5_box">
+                          <div class="content_box5">
+                             <div class="title_box5">Easy to Customize</div>
+                             <div class="text_box5">Class aptent taciti estied aliquam ellus pers piciat unde omnis dolorem dantium.</div>
+                             <a href="#" class="btn_block5">See Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="box5 block5_box">
+                          <div class="content_box5">
+                             <div class="title_box5">Online Store</div>
+                             <div class="text_box5">Class aptent taciti estied aliquam ellus pers piciat unde omnis dolorem dantium.</div>
+                             <a href="#" class="btn_block5">See Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                 <div class="box6 block5_box">
+                                  <div class="content_box5">
+                                     <div class="title_box5">Custom Pages</div>
+                                     <div class="text_box5">Phasellus sit amet tristique ligula. Donec iaculis leo suscipit ultricies.</div>
+                                     <a href="#" class="btn_block5">See Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
              </section>
+          
+            <section class="slader-client" id='slader-client'>
+              <div class="container">
+                 <div class="row">
+                  <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                  <h2>Our Client</h2>
+                  <div class="text_slader-client">Congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <div class="owl-carousel" id="slader-client">
+                    
+                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                        <div class="box5_block6">
+                                          <div class="item"><img src="img/star.png" alt=""></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                      <div class="box5_block6">
+                                        <div class="item"><img src="img/lab.png" alt=""></div>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                    <div class="box5_block6">
+                                      <div class="item"><img src="img/jud.png" alt=""></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                                  <div class="box5_block6">
+                                    <div class="item"><img src="img/timber.png" alt=""></div>
+                                  </div>
+                                </div>
+                  </div>
+                </div>
+            </div>
+            </section>
+        
+        <section class="team" id="team">
+          <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                 <div class="content_tem">
+                    <h2>Our Team</h2>
+                    <div class="text_team">The first requirement for an user experience is to meet the exact <br> needs of the customer.</div>
+                  </div>
+                </div>
+               </div>
+          </div>
+
+            <div class="container">
+                 <div class="row">
+                    <div class="box_team">
+                          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="photo_team">
+                              <div class="photo"><img src="img/Reena.jpg" alt=""></div>
+                              <div class="content_photo">
+                                <div class="title_photo">Reena Scot</div>
+                                <div class="text_photo">Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla.</div>
+                                <div class="icon1_photo"><i class="fab fa-facebook"></i></div>
+                                <div class="icon1_photo"><i class="fab fa-twitter"></i></div>
+                                <div class="icon1_photo"><i class="fab fa-linkedin-in"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="photo_team">
+                              <div class="photo"><img src="img/David.jpg" alt=""></div>
+                              <div class="content_photo">
+                                <div class="title_photo">David Martin</div>
+                                <div class="text_photo">Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla.</div>
+                                <div class="icon1_photo"><i class="fab fa-facebook"></i></div>
+                                <div class="icon1_photo"><i class="fab fa-twitter"></i></div>
+                                <div class="icon1_photo"><i class="fab fa-linkedin-in"></i></div>
+                              </div>
+                            </div>
+                            </div>
+                        
+                          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                              <div class="photo_team">
+                                <div class="photo"><img src="img/Jhon.jpg" alt=""></div>
+                                <div class="content_photo">
+                                  <div class="title_photo">Jhon White</div>
+                                  <div class="text_photo">Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla.</div>
+                                  <div class="icon1_photo"><i class="fab fa-facebook"></i></div>
+                                <div class="icon1_photo"><i class="fab fa-twitter"></i></div>
+                                <div class="icon1_photo"><i class="fab fa-linkedin-in"></i></div>
+                                </div>
+                              </div>
+                     </div>         
+                  </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Join" id="Join">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="content_Join">
+                    <div class="title_Join">Join Us & Free Subscribe</div>
+                    <div class="text_Join">The first requirement for an user experience is to meet the exact needs of<br> the customer.</div>
+                    <div class="mail">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="block_mail">
+                      <input class="box_mail" type="mail" name="mail" placeholder="Your mail">
+                      <input class="btn_send" type="submit" name="Send" placeholder="SEND" value="SEND">
+                </div>
+              </div>
+            </div>
         </div>
-    </main>
+        </section>
+      </div>
+  </main>
 </body>
 </html>
