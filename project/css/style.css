@@ -18,7 +18,13 @@ img{
 	height:auto;
 	max-height:100%;
 	}
-	
+.for_page{
+	min-height: 100%;
+    position: relative;
+}
+.page{
+	padding-bottom: 100px;
+}
 /*header*/
 .header{
 	z-index:2;
@@ -132,7 +138,7 @@ img{
 
 /*block2*/
 .block2{
-	 padding-top: 900px;
+	 padding-top: 800px;
 	 padding-bottom:100px;
 	}
 .block2 h1{
@@ -278,10 +284,12 @@ img{
 		object-fit: cover;
 		}
 .title_galery{
-	color:#000;
-	font-size:30px;
-	padding-bottom:20px;
-	font-family: 'vidaloka_regular';
+    color: #000;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'vidaloka_regular';
+    line-height: 1;
+
 		}
 .text_galery{
 	font-size: 12px;
@@ -323,7 +331,7 @@ img{
 	.icon_box3{
 		height: 45px;
 		width: auto;
-		vertical-align: middle;
+		text-align: center;;
 	}
 	.icon_box3 img{
 		max-width: 100%;
@@ -348,11 +356,17 @@ img{
 /*block*/
 
 /*block4*/
+.block4{
+	padding: 30px 0px;
+}
 	.block4 .container{
 	display: block;
     margin-left: auto;
     margin-right: auto
 	}
+.img_galery3 .img_galery .img_galery3 .hover_galery .title_galery{
+	line-height: 27px;
+}
 /*
 block5*/
 .block5 .container{
@@ -405,6 +419,9 @@ block5*/
 	display: block;
     text-align: center;
 }
+.box5 .btn_block5{
+	color: black;
+}	
 
 .title_box5{
 font-size: 20px;
@@ -425,22 +442,35 @@ margin-bottom: 40px;
 	color: black;
 }
 
-#slader-client{
+#block6{
 	background: url(../img/fon_slader.jpg) no-repeat;
 	padding: 90px 0;
 	background-size: cover;
 }
-.slader-client h2{
+
+.block6 h2{
 	font-size: 36px;
-	color: #ffffff;
+	color:#ffffff;
 	font-family: 'vidaloka_regular';
 	margin: 0 auto;
 	margin-bottom: 40px;
 }
 .text_slader-client{
 	font-size: 16px;
-	color: #ffffff;
+	color:#ffffff;
 	font-family: 'vidaloka_regular';
+}
+#block6 .owl-carousel {
+    display: flex;
+    width: auto !important;
+    z-index: 1;
+	text-align: center;
+	
+}
+.box_block6 .item{
+	padding-right: 150px;
+	padding-top: 130px;
+	padding-bottom: 190px;
 }
 #team{
 	display: block;
@@ -453,6 +483,7 @@ margin-bottom: 40px;
 	font-size: 51px;
 	font-family: 'vidaloka_regular';
 	text-align: center;
+	color: #313131;
 }
 .text_team{
 	margin-top: 58px;
@@ -461,50 +492,48 @@ margin-bottom: 40px;
 	letter-spacing: 1px;
 	font-family: 'vidaloka_regular';
 	text-align: center;
+	color: #a4a3a3;
 }
 
 .photo_team{
-	display: block;
-	padding: 15px;
-    width: 370px;
-    height: 365px;
-	margin-bottom: 30px;
-	margin-right: 30px;
-    line-height: 100px;
+    width: 335px;
+	border: 1px solid #dadada;
 	text-align: center;
-	
 
 }
 .photo_team img{
-	margin-right: 10px
+	margin-right: 10px;
+	width: 100%;
+	max-width: 335px;
 }
 .title_photo{
 	font-size: 14px;
-	font-weight:bold;
+	font-weight: bold;
 	font-family: 'vidaloka_regular';
 	text-align: center;
+
 }
 .text_photo{
 	font-size: 13px;
 	font-family: 'vidaloka_regular';
 	text-align: center;
 	line-height: 15px;
+	color: #a4a3a3;
 }
-.icon1_photo{
+.icons{
 display: flex;
 font-size: 15px;
 color: #dadada;
 text-align: center;
 left: 10px;
 bottom: 10px;
-
+justify-content: center;
 }
 
-.icon1_photo:hover i {
+.icon1_photo:hover i, .icon2_photo:hover i, .icon3_photo:hover i {
 color: #ffeb3b;
 }
 .box_team{
-	border: 1px solid #dadada;
 	display: flex;
 }
 #Join{
@@ -512,6 +541,7 @@ color: #ffeb3b;
 	background: url(../img/fon_jpin.jpg) no-repeat;
 	padding: 100px 0;
 	background-size: cover;
+	padding-bottom: 300px;
 }
 .title_Join{
 	font-size: 51px;
@@ -525,6 +555,7 @@ color:#969595;
 font-size: 16px;
 font-family: 'vidaloka_regular';
 text-align: center;
+padding-bottom: 70px;
 }
 .content_Join{
 	text-align: center;
@@ -532,6 +563,7 @@ text-align: center;
 
 .block_mail{
 	text-align: center;
+	padding-bottom: 120px;
 }
 .btn_send{
 	height: 50px;
@@ -542,6 +574,44 @@ text-align: center;
 	height: 50px;
 	width: 460px;
 	background: rgb(91, 94, 101);
+	opacity: 0.5;
+	border: none;
+}
+
+footer{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background: url("../img/fon_footer.jpg") no-repeat;
+    background-size: cover;
+}
+
+.footer-logo{
+    width: 15%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.footer-text{
+    font-size: 14px;
+    font-family: 'vidaloka_regular';
+    color: white;
+    width: 22%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.footer-text a{
+    color: #ffeb3b;
+}
+.footer-icons{
+    font-size: 27px;
+    width: 16%;
+	margin: 0 auto;
+	display: flex;
+}
+.iconfb, .icontw, .iconli{
+    color: white;
+    margin:0 15px;
 }
 /*
 color:ffeb3b;

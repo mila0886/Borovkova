@@ -4,11 +4,11 @@ jQuery(document).ready(function () {
 
     'use strict';
 
-	var slid = jQuery('#slider-baner');
+	var slid = jQuery("#slider-baner");
 		
 	slid.owlCarousel({
 		items: 1,
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 6000,
 		autoplayHoverPause: false,
 		smartSpeed: 1000,
@@ -49,11 +49,11 @@ jQuery(document).ready(function () {
 		}
 	});
 	
-	var slid = jQuery('#slader-client');
+	var slader_client = jQuery("slader-client");
 		
-	slid.owlCarousel({
-		items: 1,
-		autoplay: false,
+	slader_client.owlCarousel({
+		items: 4,
+		autoplay: true,
 		autoplayTimeout: 6000,
 		autoplayHoverPause: false,
 		smartSpeed: 1000,
@@ -80,18 +80,17 @@ jQuery(document).ready(function () {
 				mouseDrag: true
 			},
 			767:{
-				items: 1,
+				items: 2,
 				mouseDrag: true
 			},
 			991:{
-				items: 1,
+				items: 4,
 				mouseDrag: true
 			},
 			1099:{
-				items: 1,
+				items: 4,
 				mouseDrag: true
 			}
 		}
 	});
-
-});
+	});

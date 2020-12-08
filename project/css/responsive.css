@@ -1,17 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
 @media(max-width:1199px){
+	
 	.nav-menu ul li {
     margin-right: 12px;
 }
+.img_galery_box1 {
+    height: 443px;
+}
+.img_galery .hover_galery {
+    padding: 20px 5px 50px 30px;
 	}
+.title_galery {
+	font-size: 21px;
+	padding-bottom: 4px;
+}
+#Join {
+	padding-bottom: 100px;}
+}
 @media(max-width:991px){
-	.nav-menu{
-		    margin: 15px 0px;
-			border-bottom: solid 1px #a29a98;
-		}
-	.border-header {
-    border-bottom: inherit;
+	
+.nav-menu{
+margin: 15px 0px;
+border-bottom: solid 1px #a29a98;
+	}
+.border-header {
+border-bottom: inherit;
 }
 #slider-baner {
     padding-top: 254px;
@@ -35,7 +49,69 @@
 .box2_block {
     margin-bottom: 40px;
 }
+.img_galery_box1 {
+	height: 243px;}
+.img_galery .hover_galery {
+		padding: 7px 0px 0px 17px;
 	}
+.title_galery {
+	font-size: 7px;
+    padding-bottom: 1px;
+}
+.text_galery {
+	font-size: 9px;
+	line-height: 10px;
+}
+
+.btn_galery {
+    text-decoration: none;
+    color: #181a1f;
+    opacity: 0.7;
+}
+.btn_galery {
+	font-size: 8px;
+    width: 87px;
+    margin-top: 1px;
+}
+#block3 {
+	padding: 60px 0;}
+.box3_block3 .title_box3 {
+		font-size: 39px;
+		margin-top: 29px;}
+.icon_box3 {
+	height: 30px;}
+
+.box3_block3 .text_box3 {
+		padding-bottom: 30px;
+	}
+.block4 .nav-tabs {
+margin-bottom: 60px;}
+.block5 .container {
+		padding: 60px 0;
+	}
+.box_block6 .item {
+	padding: 75px 0 60px 65px;
+}
+#Join {
+	padding-bottom: 9px;
+}
+.title_Join {
+	font-size: 35px;
+	margin-bottom: 10px;
+	}
+.box_team {
+display: block;
+	}
+	.photo_team {
+		width: 223px;}
+.footer-text {
+    font-size: 8px;
+	margin-bottom: 10px;}
+.footer-icons {
+	font-size: 19px;
+}
+}
+
 @media(max-width:776px){
 .logo{
 	margin-bottom:20px;
@@ -108,5 +184,24 @@
 }
 	}
 @media(max-width:480px){
-	}
-
+	
+.img_galery_box1 {
+		height: 170px;}
+#team {
+padding: 50px 0;
+}
+.content_tem h2 {
+font-size: 38px;
+}
+.box_team {
+border: 1px solid #dadada;
+display: block;
+}
+.box_mail {
+    height: 40px;
+    width: 350px;  
+}
+.box_team {
+    border: none;
+    display: block;
+}
