@@ -49,7 +49,7 @@ jQuery(document).ready(function () {
 		}
 	});
 	
-	var slader_client = jQuery("slader-client");
+	var slader_client = jQuery("#slader-client");
 		
 	slader_client.owlCarousel({
 		items: 4,

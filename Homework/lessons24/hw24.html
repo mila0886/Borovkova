@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<title>Homework</title>
+    </head>
+    <script>
+        let a = prompt("10");
+        if (a == 10){
+            alert('Верно');
+        }else{
+            alert('Неверно');
+        
+        }
+    </script>
+    <body>
+        <p>Текст1</p>
+        <p>Текст2</p>
+        <p id="paragraf">Текст3</p>
+        <p>Текст4</p>
+        <p>Текст5</p>
+        <script>
+        let paragraf = document.getElementById('paragraf');
+           paragraf.style.background = 'red';
+           paragraf.style.fontSize = '20px';
+        </script>
+
+<form class="form">
+    <div class="box">
+        <input class="name" type="text" name="name" alt="name" placeholder="Name">
+        <input type="tel" name="phone" alt="phone" placeholder="(000)123-45-67">
+    </div>
+</form>
+<script>
+    let name= document.querySelector('.name');
+    name.placeholder = 'Mila';
+</script>
+    </body>
+   </html>

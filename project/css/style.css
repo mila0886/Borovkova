@@ -23,7 +23,7 @@ img{
     position: relative;
 }
 .page{
-	padding-bottom: 100px;
+	padding-bottom: 214px;
 }
 /*header*/
 .header{
@@ -72,6 +72,10 @@ img{
 	}
 #slider-baner{
 	padding-top:300px;
+	}
+	.no-js .owl-carousel, .owl-carousel.owl-loaded {
+		display: block;
+		overflow: hidden;
 	}
 .btn-search{
 	font-size:0;
@@ -467,11 +471,7 @@ margin-bottom: 40px;
 	text-align: center;
 	
 }
-.box_block6 .item{
-	padding-right: 150px;
-	padding-top: 130px;
-	padding-bottom: 190px;
-}
+
 #team{
 	display: block;
     margin-left: auto;
@@ -496,10 +496,10 @@ margin-bottom: 40px;
 }
 
 .photo_team{
-    width: 335px;
+    max-width: 335px;
 	border: 1px solid #dadada;
 	text-align: center;
-
+	width: 100%;
 }
 .photo_team img{
 	margin-right: 10px;
@@ -507,11 +507,12 @@ margin-bottom: 40px;
 	max-width: 335px;
 }
 .title_photo{
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	font-family: 'vidaloka_regular';
 	text-align: center;
-
+	padding-top: 30px;
+	
 }
 .text_photo{
 	font-size: 13px;
@@ -519,29 +520,28 @@ margin-bottom: 40px;
 	text-align: center;
 	line-height: 15px;
 	color: #a4a3a3;
+	padding-bottom: 30px;
+
 }
 .icons{
 display: flex;
 font-size: 15px;
 color: #dadada;
 text-align: center;
-left: 10px;
-bottom: 10px;
+left: 30px;
 justify-content: center;
+
 }
 
 .icon1_photo:hover i, .icon2_photo:hover i, .icon3_photo:hover i {
 color: #ffeb3b;
 }
-.box_team{
-	display: flex;
-}
+
 #Join{
 	
 	background: url(../img/fon_jpin.jpg) no-repeat;
 	padding: 100px 0;
 	background-size: cover;
-	padding-bottom: 300px;
 }
 .title_Join{
 	font-size: 51px;
@@ -563,7 +563,6 @@ padding-bottom: 70px;
 
 .block_mail{
 	text-align: center;
-	padding-bottom: 120px;
 }
 .btn_send{
 	height: 50px;
@@ -584,7 +583,8 @@ footer{
 	left: 0;
 	bottom: 0;
 	background: url("../img/fon_footer.jpg") no-repeat;
-    background-size: cover;
+	background-size: cover;
+	padding-top: 20px;
 }
 
 .footer-logo{
