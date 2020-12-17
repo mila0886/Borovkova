@@ -1,0 +1,26 @@
+@charset "UTF-8"
+/* CSS dDocument*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.form{
+    width: 200px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgb(225, 225, 158);
+}
+#button{
+        font-style: 15px;
+        color: #fff;
+        outline: none;
+        border: none;
+        width: 177px;
+        background:#2794a7;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        cursor: pointer;
+}

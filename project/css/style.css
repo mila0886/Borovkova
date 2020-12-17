@@ -479,7 +479,7 @@ margin-bottom: 40px;
 	padding: 100px 0;
 	
 }
-.content_tem h2{
+.content_tem{
 	font-size: 51px;
 	font-family: 'vidaloka_regular';
 	text-align: center;
@@ -530,13 +530,21 @@ color: #dadada;
 text-align: center;
 left: 30px;
 justify-content: center;
-
+display: flex;
+    
 }
 
 .icon1_photo:hover i, .icon2_photo:hover i, .icon3_photo:hover i {
 color: #ffeb3b;
 }
-
+.team-icon-box{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
 #Join{
 	
 	background: url(../img/fon_jpin.jpg) no-repeat;

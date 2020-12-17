@@ -49,8 +49,11 @@ border-bottom: inherit;
 .box2_block {
     margin-bottom: 40px;
 }
+
 .img_galery_box1 {
-	height: 243px;}
+    height: 328px;
+}
+
 .img_galery .hover_galery {
 		padding: 7px 0px 0px 17px;
 	}
@@ -104,12 +107,18 @@ display: block;
 	}
 	.photo_team {
 		width: 223px;}
+	
+	
+
+footer {
+    padding-top: 81px;}
 .footer-text {
     font-size: 8px;
 	margin-bottom: 10px;}
 .footer-icons {
 	font-size: 19px;
 }
+
 }
 
 @media(max-width:776px){
@@ -165,6 +174,8 @@ display: block;
     margin-right: 12px;
     border-bottom: solid 0.5px #ccc;
 }
+.img_galery_box1 {
+    height: 243px;
 }
 @media(max-width:500px){
 	.banner-home .owl-carousel .owl-item .item h2 {
