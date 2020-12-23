@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<title>HW Events-callback-form </title>
+    </head>
+   <style>
+       .label-input{
+           border: solid 2px red;
+       }
+       input{
+           margin-bottom: 10px;
+           padding: 10px;
+       }
+   </style>
+    <body>  
+        <div>
+            <input value ="Ваше имя" id = "first-name"/>
+        </div>
+        <div>
+            <input value ="Ваша фамилия" id = "last-name"/>
+        </div>
+        <div>
+            <input value ="Ваш город" id = "city"/>
+        </div>
+        <div>
+            <button id="click-btn">Click Send</button>
+        </div>
+    <script>
+        function addLabel(elementid){
+            let element = document.getElementById(elementid);
+            element.className = "label-input";
+        
+        }
+        function addLabelInputs(){
+            addLabelClass('first-name');
+            addLabelClass('last-name');
+            addLabelClass('city');
+        }
+        let sendBtn = document.getElementById("click-btn");
+        sendBtn.addEventListener('click', addLabelInputs);
+        
+        
+    </script>        
+    </body>
+   </html>
