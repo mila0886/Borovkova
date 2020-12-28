@@ -1,46 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
+<head>
 <meta charset="UTF-8">
-<title>HW Events-callback-form </title>
-    </head>
-   <style>
-       .label-input{
-           border: solid 2px red;
-       }
-       input{
-           margin-bottom: 10px;
-           padding: 10px;
-       }
-   </style>
-    <body>  
-        <div>
-            <input value ="Ваше имя" id = "first-name"/>
-        </div>
-        <div>
-            <input value ="Ваша фамилия" id = "last-name"/>
-        </div>
-        <div>
-            <input value ="Ваш город" id = "city"/>
-        </div>
-        <div>
-            <button id="click-btn">Click Send</button>
-        </div>
-    <script>
-        function addLabel(elementid){
-            let element = document.getElementById(elementid);
-            element.className = "label-input";
-        
-        }
-        function addLabelInputs(){
-            addLabelClass('first-name');
-            addLabelClass('last-name');
-            addLabelClass('city');
-        }
-        let sendBtn = document.getElementById("click-btn");
-        sendBtn.addEventListener('click', addLabelInputs);
-        
-        
-    </script>        
-    </body>
-   </html>
+<title>events callback form</title>
+</head>
+<style>
+input{
+	margin-bottom:10px;
+	padding:10px;
+	}
+	label{
+        display: none;
+    }
+</style>
+<body>
+<div>
+ <input value="Mila" id="first-name" />
+ <label id = "first-name-label" for="first-name" >Ваше имя</label>
+ </div>
+ <div>
+ <input value="Borovkova" id="last-name" />
+ <label id= "last-name-label" for="last-name">Ваше фамилия</label>
+ </div>
+ <div>
+ <input value="Kiev" id="city" />
+ <label id = "city-label"  for="city" >Ваш город</label>
+</div>
+<div>
+<button id="click-btn">Click Send</button>
+</div>
+<script>
+ function labels (){
+	 document.getElementById('first-name-label').style.display = 'inline-block';
+	 document.getElementById('last-name-label').style.display = 'inline-block';
+	 document.getElementById('city-label').style.display = 'inline-block';
+	 }
+	
+	let sendBtn = document.getElementById('click-btn');
+	sendBtn.addEventListener('click', labels);
+	
+	
+</script>
+</body>
+</html>
