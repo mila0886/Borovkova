@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event.stopImmediatePropagation</title>
+</head>
+<body>
+    <div class="container" onclick="myFunction2()">Func2
+        <div onclick="myFunction(event)">myFunc click me</div>
+    </div>
+    <label>stopImmediatePropagation<input type="checkbox"></label>
+</body>
+<script>
+    let myFunction = function(event){
+        alert("Func");
+        if(document.querySelector("input").checked){
+            event.ImmediatePropagation();
+        }
+    }
+    let myFunction2 = function(event){
+        alert("Func2");
+    }
+    document.querySelector("div>div").addEventListener("click", alert("Только один слушатель"));
+</script>
+</html>

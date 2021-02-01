@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Slider</title>
+    <script src="js/car.js"></script>
+   <script src="js/custom.js"></script>
+</head>
+<style>
+    .mainacad-slider{
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .mainacad-slider img{
+    max-width: 100%;
+    width: auto;
+    height: auto;}
+
+</style>
+<body>
+    <div class="mainacad-slider">
+        <img id="slider-img" src="" />
+        <button id="click-prev">Prev</button>
+        <button id="click-next">Next</button>
+    </div>
+</body>
+<script>
+  let slider1 = {
+   imgUrl : [],
+   currentIndexImg : 0,
+ PrevBtn : document.getElementById('click-prev'),
+ NextBtn : document.getElementById('click-next'),
+ sliderImg : document.getElementById('slider-img'),
+
+
+start: function (){
+    this.PrevBtn.addEventListener('click', this.onPrevBtnClick);
+        this.NextBtn.addEventListener('click', this.onNextBtnClick);
+
+
+
+        this.imgUrl.push('https://i.ytimg.com/vi/J1FLDDsW6OQ/maxresdefault.jpg');
+        this.imgUrl.push('https://million-wallpapers.ru/wallpapers/4/11/11442647451402202999.jpg');
+        this.imgUrl.push('https://i.ytimg.com/vi/J1FLDDsW6OQ/maxresdefault.jpg');
+        this.imgUrl.push('https://thumbs.dreamstime.com/z/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8-%D1%81%D0%BF%D0%BE%D1%80%D1%82-%D0%B3%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B-111590556.jpg');
+
+
+        this.sliderImg.src = this.imgUrl[this.currentIndexImg];
+        this.PrevBtn.disabled = true;
+        }
+
+ onPrevBtnClick :function (e){
+   this.currentIndexImg --;
+   this.sliderImg.src = this.imgUrl[this.currentIndexImg];
+   this.NextBtn.disabled = false;
+
+   if(this.currentIndexImg ===0){
+    this.PrevBtn.disabled = true;
+   }
+}
+onNextBtnClick : function (e){
+    this.currentIndexImg ++;
+    this.sliderImg.src = this.imgUrl[this.currentIndexImg];
+    this.PrevnBtn.disabled = false;
+
+   if(this.currentIndexImg ===(this.imgUrl.length -1)){
+    this.NextBtn.disabled = true;
+   }
+   
+}
+
+};
+
+</script>
+</html>

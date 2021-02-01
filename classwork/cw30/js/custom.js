@@ -1,0 +1,2 @@
+car.start();
+alert(consumption);

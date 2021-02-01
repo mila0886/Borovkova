@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Opener</title>
+</head>
+<body>
+<input type="button" value="Открыть окно" onclick="openW()"/>
+</body>
+<script>
+    function openW(){
+        win = window.open("about:blank", "win", "width = 500, higth = 500");
+        win.document.write("Текст нового окна");
+        win.opener.document.write("Текст родительского окна");
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen</title>
+</head>
+<body>
+    <div id="userScreen"></div>
+    <div id="userScreenwidth"></div>
+    <div id="avalSizeWindowWidth"></div>
+    <div id="avalSizeWindowHight"></div>
+    <div id="colorDepth"></div>
+
+    <script>
+       let screenNew;
+       let userScreenwidth;
+       userScreenwidth = "Ширина экрана:" + screen.width;
+       userScreen += "<br />";
+       userScreen = "Высота экрана:" + screen.height;
+
+       window.document.getElementById('userScreen').innerHTML=userScreen;
+       window.document.getElementById('userScreenwidth').innerHTML=userScreenwidth;
+
+
+       let avalSizeWindowWidth;
+       let avalSizeWindowHight;
+       avalSizeWindowWidth = "Свободная ширина экрана:" + screen.availWidth;
+       avalSizeWindowWidth += "<br/>";
+       avalSizeWindowHight = "Свободная высота экрана:" + screen.availWidth;
+       window.document.getElementById('avalSizeWindowWidth').innerHTML=avalSizeWindowWidth;
+       window.document.getElementById('avalSizeWindowHight').innerHTML=avalSizeWindowHight;
+       let colorDepth;
+colorDepth = "Качество цвето передачи:" + screen.colorDepth; 
+window.document.getElementById("colorDepth").innerHTML= colorDepth;
+    </script>
+ 
+</body>
+</html>

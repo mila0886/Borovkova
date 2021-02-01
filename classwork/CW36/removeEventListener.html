@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeEventListener</title>
+</head>
+<body>
+    <div id="test">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sint pariatur,
+         delectus doloremque dolores ducimus ab. At ipsa ducimus reiciendis quos saepe, 
+         quidem reprehenderit, quae in vero molestiae et autem?
+    </div>
+    <button onclick="removeHandler()">Остановить собыитие</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sint pariatur,
+        delectus doloremque dolores ducimus ab. At ipsa ducimus reiciendis quos saepe, 
+        quidem reprehenderit, quae in vero molestiae et autem?</p>
+        <div id="demo"></div>
+</body>
+<script>
+document.getElementById("test").addEventListener("mousemove", myFunction);
+
+function myFunction(){
+    document.getElementById("demo").innerHTML = Math.random();
+    
+}
+
+function removeHandler(){
+    document.getElementById("test").removeEventListener("mousemove", myFunction);
+}
+</script>
+</html>

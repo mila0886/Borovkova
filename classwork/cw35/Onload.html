@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onload</title>
+</head>
+<body onload="ChecCook()">
+    <div id="test"></div>
+    <script>
+        function ChecCook(){
+            let text = " ";
+            if (navigator.cookieEnabled == true){
+                text = "Cookie are Enabled";
+            }else{
+                text = "Cookie are not Enabled";
+            }
+            document.getElementById('test').innerHTML = text;
+        }
+
+    </script>
+    
+</body>
+</html>

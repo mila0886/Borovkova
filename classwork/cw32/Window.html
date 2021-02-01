@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+<script>
+    /*let fin = "String";
+    console.log(window.fin);*/
+
+
+    //window.open('https://rozetka.com.ua/');
+
+    //setTimeout(()=>window.open('https://rozetka.com.ua/'), 5000);//
+
+    //window.open(url, name, params)//
+
+    //let params = window.open("https://rozetka.com.ua/", "hello", "width = 200, hight = 200");
+   //params.document.write("Hello my people");
+   </script>
+<body>
+    <input type="button" value = "Открыть окно newWin" onclick="winOpen()"/><br>
+    <input type="button" value = "Проверяем открыто ли  окно newWin" onclick="checkOpen()"/>
+   <div id = "finish"></div>
+</body>
+<script>
+let newWin;
+function winOpen(){
+    newWin = window.open("https://rozetka.com.ua/", "hello", "width = 200, hight = 200, top:500, left:500");
+}
+function checkOpen(){
+    if (!newWin){
+        document.getElementById('finish').innerHTML = 'Окно newWin не было открыто';
+    } else{
+        if(newWin.closed){
+            document.getElementById('finish').innerHTML = "Окно newWin  было закрыто";
+        } else{
+            document.getElementById('finish').innerHTML = "Окно newWin  открыто в данній момент";
+        }
+    }
+}
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date-Object</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date();
+        document.write(currentDate);
+
+        //let myDate = new Date("30 december 2020")//
+        //document.write(myDate);//
+
+        let nextDate = new Date(30/12/2020)
+        document.write(nextDate);
+        let welcome;
+        let myDate = new Date();
+        let hour = myDate.getHours();
+        let minute = myDate.getMinute();
+        let second = myDate.second();
+        if(minute<10){
+            second = "0"+ minute;
+        }if (minute<10){
+            second = "0"+ second;
+        }if(hour<12){
+            welcome = "Доброе утро";
+        }else if(hour<17){
+            welcome = "Добрій день";
+        }else{
+            welcome = "Добрый вечер"
+        }
+        document.write(welcome + "текущее время:" + hour + ":" + minute + ":" + second ":")
+        let days = ["Воскресенье", "Понредельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота",]
+        let mounths = ["Январь","Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь","Ноябрь","Декабрь"];
+        
+        let fullDate = "Сегодня" + myDate.getDate() + " " + mounths [myDate.getMonth()] + "" + myDate.getFullYear() + "," + days[myDate.getDay()];
+        document.write(fullDate);
+    </script>
+</body>
+</html>

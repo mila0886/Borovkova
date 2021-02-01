@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methot blurr</title>
+</head>
+<body>
+<input type="button" value="Открыть окно" onclick="OpenW()"/>
+</body>
+<script>
+    function OpenW(){
+        win = window.open("about:blank", "win", "width = 500, higth = 500");
+        win.blur();
+        win.document.write("Новое окно");
+    }
+</script>
+</html>
