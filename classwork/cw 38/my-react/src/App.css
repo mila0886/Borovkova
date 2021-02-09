@@ -1,0 +1,32 @@
+ul li{
+  list-style: circle;
+}
+.MainClasses{
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: "header header" "nav contentNew";
+}
+.HeaderMain{
+  grid-area: header;
+  background: #394e1b;
+}
+.HeaderMain img{
+  width: 100px;
+  margin-left: 50px;
+}
+.Content{
+  grid-area: contentNew;
+  background: #46b3e6;
+}
+.NavBar{
+  grid-area: nav;
+  background: #d9ecbf;
+}
+.ImageToProfile img{
+width: 100%;
+}
+.ImageToProfile {
+height: 300px;
+overflow: hidden;
+}
