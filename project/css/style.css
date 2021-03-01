@@ -472,70 +472,55 @@ margin-bottom: 40px;
 	
 }
 
-#team{
-	display: block;
-    margin-left: auto;
-	margin-right: auto;
-	padding: 100px 0;
-	
+.our-team{
+    padding: 100px 0;
 }
-.content_tem{
-	font-size: 51px;
-	font-family: 'vidaloka_regular';
-	text-align: center;
-	color: #313131;
+.our-team h2{
+    font-size: 51px;
+    font-family: 'vidaloka_regular';
+    text-align: center;
+    margin-bottom: 60px;
 }
-.text_team{
-	margin-top: 58px;
-	margin-bottom: 78px;
-	font-size: 16px;
-	letter-spacing: 1px;
-	font-family: 'vidaloka_regular';
-	text-align: center;
-	color: #a4a3a3;
+.our-team-text{
+    font-size: 16px;
+    width: 435px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
 }
-
-.photo_team{
-    max-width: 335px;
-	border: 1px solid #dadada;
-	text-align: center;
-	width: 100%;
+.team-man-box{
+    border: 1px solid #f1f1f1;
+    padding: 30px 0;
 }
-.photo_team img{
-	margin-right: 10px;
-	width: 100%;
-	max-width: 335px;
+.team-man-name{
+    font-size: 16px;
+    font-family: 'vidaloka_regular';
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: .4px;
+    margin-bottom: 30px;
 }
-.title_photo{
-	font-size: 16px;
-	font-weight: bold;
-	font-family: 'vidaloka_regular';
-	text-align: center;
-	padding-top: 30px;
-	
+.team-man-description{
+    font-size: 13px;
+    color: #969595;
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 22px;
+    padding-bottom: 30px;
 }
-.text_photo{
-	font-size: 13px;
-	font-family: 'vidaloka_regular';
-	text-align: center;
-	line-height: 15px;
-	color: #a4a3a3;
-	padding-bottom: 30px;
-
+.team-man-icon{
+    display: flex;
+    justify-content: center;
 }
-.icons{
-display: flex;
-font-size: 15px;
-color: #dadada;
-text-align: center;
-left: 30px;
-justify-content: center;
-display: flex;
-    
-}
-
-.icon1_photo:hover i, .icon2_photo:hover i, .icon3_photo:hover i {
-color: #ffeb3b;
+.team-man-icon i{
+    font-size: 15px;
+    color: #dadada;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
 }
 .team-icon-box{
     width: 35px;
@@ -545,44 +530,58 @@ color: #ffeb3b;
     margin-right: 10px;
     position: relative;
 }
-#Join{
-	
-	background: url(../img/fon_jpin.jpg) no-repeat;
-	padding: 100px 0;
-	background-size: cover;
+.team-icon-box:hover,
+.team-icon-box a i:hover{
+    color: white;
+    background-color: #ffeb3b;
 }
-.title_Join{
-	font-size: 51px;
-	font-family: 'vidaloka_regular';
-	color: #ffffff;
-	margin-bottom: 45px;
-	text-align: center;
+.grey-box{
+    padding: 100px 0;
+    background: url("../img/fon_jpin.jpg") no-repeat;
+    background-size: cover;
 }
-.text_Join{
-color:#969595;
-font-size: 16px;
-font-family: 'vidaloka_regular';
-text-align: center;
-padding-bottom: 70px;
+.grey-box h2{
+    font-size: 51px;
+    font-family: 'vidaloka_regular';
+    text-align: center;
+    margin-bottom: 45px;
+    color: white;
 }
-.content_Join{
-	text-align: center;
+.grey-box-text{
+    font-size: 16px;
+    color: #969595;
+    width: 445px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 65px;
 }
-
-.block_mail{
-	text-align: center;
+.form-email{
+    text-align: center;
 }
-.btn_send{
-	height: 50px;
-	width: 140px;
-	background: #ffeb3b;
+.form-email .grey-box-btn:hover{
+    cursor: pointer;
 }
-.box_mail{
-	height: 50px;
-	width: 460px;
-	background: rgb(91, 94, 101);
-	opacity: 0.5;
-	border: none;
+.grey-box-email{
+    padding: 20px 370px 20px 30px;
+    font-size: 15px;
+    background-color: rgba(255,255,255,.2);
+    outline: none;
+    border: none;
+    font-weight: 500;
+    margin-right: 20px;
+    color:white;
+}
+.grey-box-email::-webkit-input-placeholder{
+    color:white;
+}
+.grey-box-btn{
+    padding: 20px 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: #ffeb3b;
+    border: none;
+    outline: none;
 }
 
 footer{
